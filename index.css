@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172033;
+}
+
+header {
+  background: #101b2b;
+  color: white;
+  padding: 18px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  color: #38a0ff;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 14px;
+}
+
+#savatBtn {
+  background: #1683ff;
+  color: white;
+}
+
+nav {
+  background: #1c2b40;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.banner {
+  margin: 25px auto;
+  padding: 55px 20px;
+  max-width: 1200px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #10233e, #1683ff);
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #0875e8;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main > h2 {
+  text-align: center;
+}
+
+.mahsulotlar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.karta {
+  background: white;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0000000d;
+}
+
+.rasm {
+  font-size: 75px;
+  padding: 20px 0;
+}
+
+.karta p {
+  font-weight: bold;
+}
+
+.sevimli {
+  background: #edf2f7;
+  color: #172033;
+  font-size: 20px;
+}
+
+.sevimli.active {
+  color: red;
+}
+
+.savatga {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  background: #1683ff;
+  color: white;
+}
+
+.savatga:hover,
+.btn:hover {
+  opacity: 0.85;
+}
+
+footer {
+  text-align: center;
+  background: #101b2b;
+  color: white;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .mahsulotlar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mahsulotlar {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0 7px;
+  }
+}
